@@ -35,7 +35,7 @@
         <h2 class="title page-title">create your account</h2>
         <p class="underline"></p>
         <form class="reg-form" action="thankyou.html" method="get">
-          <input type="hidden" value="30102172402617" name="user-id" />
+          <input type="hidden" value="0982782917289" name="user-id" />
 
           <div class="form-row">
             <label for="fname"
@@ -84,10 +84,16 @@
             >
           </fieldset>
 
-          <fieldset>
+          <fieldset class="flower-fieldset">
             <legend>Favorite Flower Type</legend>
-            <select name="faculty" aria-label="faculty">
-              <option value="0" hidden>Choose your most favorite flower type</option>
+            <select
+              class="flower-select"
+              name="flower-select"
+              aria-label="flower-select"
+            >
+              <option value="0" hidden>
+                Choose your most favorite flower type
+              </option>
               <option value="1">Roses</option>
               <option value="2">Tulips</option>
               <option value="3">Lilies</option>
@@ -99,29 +105,29 @@
           <fieldset>
             <legend>Interests</legend>
             <input
-              id="garden"
-              name="interests"
-              value="gardening"
-              type="checkbox"
-            /><label for="garden">Gardening</label>
-            <input
-              id="arr"
-              name="interests"
-              value="flower arranging"
-              type="checkbox"
-            /><label for="arr">Flower Arranging</label>
-            <input
               id="farm"
               name="interests"
               value="farming"
               type="checkbox"
-            /><label for="farm">Farming</label>
+            /><label for="farm">Farming</label><br />
+            <input
+              id="garden"
+              name="interests"
+              value="gardening"
+              type="checkbox"
+            /><label for="garden">Gardening</label><br />
             <input
               id="seeds"
               name="interests"
               value="planting seeds"
               type="checkbox"
-            /><label for="seeds">Planting Seeds</label>
+            /><label for="seeds">Planting Seeds</label><br />
+            <input
+              id="arr"
+              name="interests"
+              value="flower arranging"
+              type="checkbox"
+            /><label for="arr">Flower Arranging</label><br />
           </fieldset>
 
           <label for="ta" class="about-label">About you:</label>
