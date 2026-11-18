@@ -1272,6 +1272,22 @@ body {
   border-radius: 15px;
 }
 
+/* favorite flower type: fluid, no media queries */
+
+.flower-fieldset {
+  min-width: 0;
+}
+
+.flower-select {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .about-label {
   display: block;
   margin-bottom: 10px;
