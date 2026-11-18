@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login | Flower Power</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.css" />
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html#home"><i class="fa-solid fa-house home-icon"></i></a>
+      <input type="text" class="search-box" aria-label="search" />
+      <i class="fa-solid fa-magnifying-glass search-icon"></i>
+      <ul class="links">
+        <li><a href="index.html#home">home</a></li>
+        <li><a href="index.html#about">about</a></li>
+        <li><a href="index.html#featured">portfolio</a></li>
+        <li><a href="index.html#offer">services</a></li>
+        <li><a href="index.html#pricing">prices</a></li>
+        <li><a href="index.html#team">team</a></li>
+        <li class="dropdown-point">
+          <a href="Form.html">account</a>
+          <ul class="dropdown-menu">
+            <li><a href="Form.html">register</a></li>
+            <li><a href="login.html">login</a></li>
+            <li><a href="terms.html">terms &amp; conditions</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#contact">contact us</a></li>
+      </ul>
+    </div>
+    <div class="page" id="home">
+      <div class="page-container">
+        <h2 class="title page-title">welcome back</h2>
+        <p class="underline"></p>
+        <form class="reg-form" action="index.html" method="get">
+        <div class="form-row">
+          <label for="lemail"><span class="required">*</span> Email:</label>
+          <input id="lemail" name="email" type="email" required />
+        </div>
+        <div class="form-row">
+          <label for="lpass"><span class="required">*</span> Password:</label>
+          <input id="lpass" name="password" type="password" required />
+        </div>
+
+          <div class="terms-check">
+            <input type="checkbox" id="remember" name="remember" /><label for="remember">Remember me</label>
+          </div>
+          <div class="form-actions">
+            <input type="submit" value="Login" />
+            <input type="reset" />
+          </div>
+          <p class="form-note">New to Flower Power? <a href="Form.html">Create an account</a></p>
+        </form>
+        <div class="page-nav">
+          <a href="index.html" class="btn"><i class="fa-solid fa-house"></i> back to home</a>
+          <a href="Form.html" class="btn"><i class="fa-solid fa-user-plus"></i> register</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer" id="contact">
+      <div class="footer-links">
+        <a href="index.html" class="btn">home</a>
+        <a href="Form.html" class="btn">register</a>
+        <a href="login.html" class="btn">login</a>
+        <a href="terms.html" class="btn">terms &amp; conditions</a>
+      </div>
+      <p>&copy; 2025 . all rights reserved by Flower Power</p>
+    </div>
+    <a href="#home" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+  </body>
+</html>

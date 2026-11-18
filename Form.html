@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Registration | Flower Power</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.css" />
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html#home"><i class="fa-solid fa-house home-icon"></i></a>
+      <input type="text" class="search-box" aria-label="search" />
+      <i class="fa-solid fa-magnifying-glass search-icon"></i>
+      <ul class="links">
+        <li><a href="index.html#home">home</a></li>
+        <li><a href="index.html#about">about</a></li>
+        <li><a href="index.html#featured">portfolio</a></li>
+        <li><a href="index.html#offer">services</a></li>
+        <li><a href="index.html#pricing">prices</a></li>
+        <li><a href="index.html#team">team</a></li>
+        <li class="dropdown-point">
+          <a href="Form.html">account</a>
+          <ul class="dropdown-menu">
+            <li><a href="Form.html">register</a></li>
+            <li><a href="login.html">login</a></li>
+            <li><a href="terms.html">terms &amp; conditions</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#contact">contact us</a></li>
+      </ul>
+    </div>
+    <div class="page" id="home">
+      <div class="page-container">
+        <h2 class="title page-title">create your account</h2>
+        <p class="underline"></p>
+        <form class="reg-form" action="thankyou.html" method="get">
+          <input type="hidden" value="30102172402617" name="user-id" />
+
+        <div class="form-row">
+          <label for="fname"><span class="required">*</span> First Name:</label>
+          <input id="fname" name="fname" type="text" required />
+        </div>
+        <div class="form-row">
+          <label for="lname"><span class="required">*</span> Last Name:</label>
+          <input id="lname" name="lname" type="text" required />
+        </div>
+        <div class="form-row">
+          <label for="email"><span class="required">*</span> Email:</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+        <div class="form-row">
+          <label for="pass"><span class="required">*</span> Password:</label>
+          <input id="pass" name="password" type="password" required />
+        </div>
+        <div class="form-row">
+          <label for="rpass"><span class="required">*</span> Repeat Password:</label>
+          <input id="rpass" name="repeat-password" type="password" required />
+        </div>
+        <div class="form-row">
+          <label for="bdate">Birth Date:</label>
+          <input id="bdate" name="birth-date" type="date" />
+        </div>
+        <div class="form-row">
+          <label for="pic">User Picture:</label>
+          <input id="pic" name="picture" type="file" />
+        </div>
+
+          <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" id="m" name="gender" value="male" /><label for="m">Male</label>
+            <input type="radio" id="f" name="gender" value="female" /><label for="f">Female</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Faculty</legend>
+            <select name="faculty" aria-label="faculty">
+              <option value="0" hidden>Choose your faculty</option>
+              <option value="1">Roses</option>
+              <option value="2">Tulips</option>
+              <option value="3">Lilies</option>
+              <option value="4">Orchids</option>
+              <option value="5">Sunflowers</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <legend>Interests</legend>
+            <input id="garden" name="interests" value="gardening" type="checkbox" /><label for="garden">Gardening</label>
+            <input id="arr" name="interests" value="flower arranging" type="checkbox" /><label for="arr">Flower Arranging</label>
+            <input id="farm" name="interests" value="farming" type="checkbox" /><label for="farm">Farming</label>
+            <input id="seeds" name="interests" value="planting seeds" type="checkbox" /><label for="seeds">Planting Seeds</label>
+            <input id="bees" name="interests" value="beekeeping" type="checkbox" /><label for="bees">Beekeeping</label>
+          </fieldset>
+
+          <label for="ta" class="about-label">About you:</label>
+          <textarea name="about" id="ta" placeholder="Say something about yourself..." cols="50" rows="4"></textarea>
+
+          <div class="terms-check">
+            <input type="checkbox" id="tc" required /><label for="tc">I agreed to </label><a href="terms.html" target="_blank">terms and conditions</a>.
+          </div>
+
+          <div class="form-actions">
+            <input type="submit" value="Register" />
+            <input type="reset" />
+          </div>
+          <p class="form-note">Already have an account? <a href="login.html">Log in here</a></p>
+        </form>
+
+        <div class="page-nav">
+          <a href="index.html" class="btn"><i class="fa-solid fa-house"></i> back to home</a>
+          <a href="login.html" class="btn"><i class="fa-solid fa-right-to-bracket"></i> login</a>
+          <a href="terms.html" class="btn"><i class="fa-solid fa-file-lines"></i> terms &amp; conditions</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer" id="contact">
+      <div class="footer-links">
+        <a href="index.html" class="btn">home</a>
+        <a href="Form.html" class="btn">register</a>
+        <a href="login.html" class="btn">login</a>
+        <a href="terms.html" class="btn">terms &amp; conditions</a>
+      </div>
+      <p>&copy; 2025 . all rights reserved by Flower Power</p>
+    </div>
+    <a href="#home" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+  </body>
+</html>
